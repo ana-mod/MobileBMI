@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -42,6 +43,12 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.textView).text = getString(R.string.height_imperial)
                 findViewById<TextView>(R.id.textView2).text = getString(R.string.mass_imperial)
 
+                true
+            }
+            R.id.author -> {
+                val intent = Intent(this, Author::class.java).apply {
+                }
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)
