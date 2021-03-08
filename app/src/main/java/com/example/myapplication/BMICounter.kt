@@ -7,14 +7,14 @@ class BMICounter {
 
     fun  calculate(height: Int, mass: Int, metric: Boolean) : Double {
 
-        var multiplier = 1
+        var multiplier = 10000
         if (!metric) multiplier = 703
 
         return if (height < 1 || mass < 1 || height > 300) {
             BMIvalue = 0.0
             0.0
         } else {
-            BMIvalue = (mass.toDouble() / (height.toDouble() * height.toDouble())) * 10000 * multiplier
+            BMIvalue = (mass.toDouble() / (height.toDouble() * height.toDouble())) * multiplier
             String.format("%.2f", BMIvalue).toDouble()
         }
 

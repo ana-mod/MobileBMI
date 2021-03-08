@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+    }
+
     fun calculate(view: View) {
 
         val mass_editText = findViewById<EditText>(R.id.editTextNumber)
