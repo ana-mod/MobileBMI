@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="mass_metric">Mass [kg]</string>
+    <string name="height_metric">Height [cm]</string>
+    <string name="mass_imperial">Mass [lb]</string>
+    <string name="height_imperial">Height []</string>
+    <string name="button_calc">Count</string>
+    <string name="bmi_value">BMI Value</string>
+    <string name="first_option">Author</string>
+    <string name="second_option">Metric</string>
+    <string name="third_option">Imperial</string>
+
 </resources>
