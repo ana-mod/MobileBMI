@@ -11,5 +11,6 @@
     <string name="third_option">Imperial</string>
     <string name="back_button">Go back</string>
     <string name="author_info">Ania Modrzejewska</string>
+    <string name="error_info">Wtf man</string>
 
 </resources>

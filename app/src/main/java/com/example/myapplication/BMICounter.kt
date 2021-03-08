@@ -15,7 +15,7 @@ class BMICounter {
             0.0
         } else {
             BMIvalue = (mass.toDouble() / (height.toDouble() * height.toDouble())) * 10000 * multiplier
-            BMIvalue
+            String.format("%.2f", BMIvalue).toDouble()
         }
 
     }

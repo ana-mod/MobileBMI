@@ -78,10 +78,16 @@ class MainActivity : AppCompatActivity() {
 
         }
         else {
-            findViewById<TextView>(R.id.textView3).text = "Wtf man"
+            findViewById<TextView>(R.id.textView3).text = getString(R.string.error_info)
             findViewById<TextView>(R.id.textView3).setBackgroundColor(ContextCompat.getColor(this, R.color.white))
             findViewById<TextView>(R.id.textView3).setTextColor(ContextCompat.getColor(this, R.color.black))
         }
+    }
+
+    fun description(view: View) {
+        val intent = Intent(this, Description::class.java).apply {
+        }
+        startActivity(intent)
     }
 
 }
